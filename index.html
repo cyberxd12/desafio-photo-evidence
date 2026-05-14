@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Evidence - Prova de Localização</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Photo Evidence</h1>
+        <p class="description">Capture fotos com prova inquestionável de data, hora e localização.</p>
+
+        <div class="camera-container">
+            <video id="webcam" autoplay playsinline></video>
+            <canvas id="canvas" style="display:none;"></canvas>
+        </div>
+
+        <div class="controls">
+            <button id="capture-btn">Capturar Evidência</button>
+            <a id="download-link" style="display:none;">
+                <button class="secondary">Baixar Foto</button>
+            </a>
+        </div>
+
+        <div class="result-container">
+            <h3>Resultado:</h3>
+            <img id="result-img" alt="Aguardando captura...">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
